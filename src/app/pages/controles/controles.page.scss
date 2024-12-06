@@ -1,0 +1,57 @@
+.space{
+    background-color: transparent;
+    //height: 10px;
+    width: auto;
+}
+
+ ion-content{
+     --background: linear-gradient(rgb(13, 144, 252), rgb(10, 194, 10), rgb(219, 130, 12));
+     .image-grid {
+          height: 29vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .image-wrapper {
+          display: flex;
+          flex-direction: row; /* Coloca las imágenes horizontalmente */
+          align-items: center;
+          gap: 0; /* Sin espacio entre imágenes */
+        }
+     .Ax{
+         height: 90px;
+         width: 90px;
+         border: 5px solid rgb(0, 0, 0);
+         position: relative;
+         top: 5vh;
+         //left: 29px;
+         //right: 50px;
+     }
+     .lhc{
+         height: 200px;
+         width: 200px;
+         border: 5px solid rgb(0, 0, 0);
+         margin-left: -20px;
+         //position: absolute;
+         //right: 29px;
+     }
+ }
+
+
+//propuesta uno
+
+
+
+
+// .Ax {
+//   height: 90px;
+//   width: 90px;
+//   border: 5px solid rgb(148, 233, 11);
+// }
+
+// .lhc {
+//   height: 200px;
+//   width: 200px;
+//   border: 5px solid rgb(245, 189, 4);
+//   margin-left: -20px; /* Ajusta la superposición */
+// }

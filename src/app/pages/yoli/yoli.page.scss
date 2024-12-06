@@ -1,0 +1,94 @@
+ion-content{
+    --background: linear-gradient(rgb(13, 144, 252), rgb(10, 194, 10), rgb(219, 130, 12));
+    .space{
+        background-color: transparent;
+        height: 5px;
+        width: auto;
+    }
+    .image-grid {
+        height: 29vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .image-wrapper {
+        display: flex;
+        flex-direction: row; /* Coloca las imágenes horizontalmente */
+        align-items: center;
+        gap: 0; /* Sin espacio entre imágenes */
+    }
+    .Ax{
+        height: 120px;
+        width: 120px;
+        border: 5px solid rgb(226, 59, 59);
+        position: relative;
+        top: 5vh;
+    }
+    .lhc{
+        height: 250px;
+        width: 250px;
+        border: 5px solid rgb(255, 1, 1);
+        margin-left: -20px;
+    }
+    .text{
+       text-align: justify;
+       font-size: 2.2vh;
+    }
+    .row-g{
+       //       arr der aba izq
+       padding: 5px 0px 10px 0px;
+       margin: 5px 0px 10px 0px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//_______________________________________________________________OLD
+// ion-toolbar{
+//     --background: linear-gradient(135deg, rgb(10, 182, 18) 30%, rgb(233, 236, 20));   
+// }
+
+// .bg{
+//     height: 20rem;
+//     background-color:transparent;
+// }
+
+
+// ion-content{
+//     --background: linear-gradient(rgb(13, 144, 252), rgb(10, 194, 10), rgb(116, 218, 21));
+//      .avyoli{
+//          position: absolute;
+//          top: 7rem;
+//          right: 14rem;
+//          height: 5rem;
+//          width: 5rem;
+//          border: 5px solid black;
+//      }
+//      .avSE{
+//          position: absolute;
+//          top: 1rem;
+//          right: 3rem;
+//          height: 12rem;
+//          width: 12rem;
+//          border: 5px solid black;
+//      }
+//     ion-text{
+//         position: absolute;
+//         top: 14rem;
+//         text-align: justify;
+//         font-size: 1rem;
+//         font-weight: bold;
+//     }
+// }
+

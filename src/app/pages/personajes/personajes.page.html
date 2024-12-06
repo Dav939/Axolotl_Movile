@@ -1,20 +1,19 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <!-- MENU -->
-    <ion-buttons slot="start">
-      <ion-menu-button menu="first"></ion-menu-button>
-    </ion-buttons>
-    <!-- MENU -->
-    <ion-title>Personajes</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header titulo="Personajes"></app-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Personajes</ion-title>
-    </ion-toolbar>
-  </ion-header>
+      <!-- Aqui va el contenido -->
+      <ion-content>
+      <ion-card *ngFor="let personaje of personajes">
+        <img [src]="personaje.data.imagen" style="height: 40hv; width: 60hv;"/>
+        <ion-card-header>
+          <ion-card-title>Nombre: {{personaje.data.nombre}}</ion-card-title>
+          <ion-card-subtitle>Arma principal: {{personaje.data.armabase}}</ion-card-subtitle>
+          <ion-card-subtitle>Arma secundaria: {{personaje.data.armasecundaria}}</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <h3>Descripcion: {{personaje.data.descripcion}}</h3>
+        </ion-card-content>
+      </ion-card>
+    </ion-content>
     <!-- Aqui va el contenido -->
-  <h1>Contents</h1>
-</ion-content>
+    
+

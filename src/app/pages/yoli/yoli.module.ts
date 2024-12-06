@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { YoliPageRoutingModule } from './yoli-routing.module';
 
 import { YoliPage } from './yoli.page';
+import { ComponentesModule } from "../../componentes/componentes.module";
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    YoliPageRoutingModule
+    YoliPageRoutingModule,
+    ComponentesModule
   ],
   declarations: [YoliPage]
 })
-export class YoliPageModule {}
+export class YoliPageModule { }

@@ -1,12 +1,10 @@
-<ion-header [translucent]="true">
-  <!-- <ion-toolbar>
-    <ion-back-button 
-    slot="start" 
-    defaultHref="/" 
-    text="Atras"
-    color="primary"
-    >
-    </ion-back-button>
-    <ion-title class="ion-text-capitalize">{{titulo}}</ion-title>
-  </ion-toolbar> -->
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar>
+    <!-- MENU -->
+    <ion-buttons slot="start">
+      <ion-menu-button menu="first"></ion-menu-button>
+    </ion-buttons>
+    <!-- MENU -->
+    <ion-title class="ion-text-center title"><strong>{{titulo}}</strong></ion-title>
+  </ion-toolbar>
 </ion-header>
