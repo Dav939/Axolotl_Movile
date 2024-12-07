@@ -1,57 +1,241 @@
-.space{
-    background-color: transparent;
-    //height: 10px;
-    width: auto;
+/* Media Queries para ajustar el diseño en pantallas grandes */
+@media (min-width: 480px) {
+    ion-content{
+    //--background: linear-gradient(rgb(13, 144, 252), rgb(10, 194, 10), rgb(219, 130, 12));
+    //--background: rgba(168,147,127,255);
+    .space{
+        background-color: transparent;
+        height: 5px;
+        width: auto;
+    }
+    .image-grid {
+        height: 29vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .image-wrapper {
+        display: flex;
+        flex-direction: row; /* Coloca las imágenes horizontalmente */
+        align-items: center;
+        gap: 0; /* Sin espacio entre imágenes */
+    }
+    .Ax{
+        height: 120px;
+        width: 120px;
+        border: 5px solid rgb(0, 0, 0);
+        position: relative;
+        top: 5vh;
+    }
+    .lhc{
+        height: 250px;
+        width: 250px;
+        border: 5px solid rgb(0, 0, 0);
+        margin-left: -20px;
+    }
+    .text{
+       text-align: justify;
+       font-size: 2.2vh;
+       margin-top: 3%;
+    }
+    // .row-g{
+        //       arr der aba izq
+    //    padding: 5px 0px 10px 0px;
+    //    margin: 5px 0px 10px 0px;
+    // }
+    // //cards
+    // .card-ft{
+    //     background: linear-gradient(rgb(0, 0, 0), rgb(10, 194, 10), rgb(236, 240, 28));
+    //     background: linear-gradient(90deg, rgb(0, 0, 0), rgb(10, 194, 10) 25%, rgb(236, 240, 28) 90%,);
+    //     background: rgb(2,0,36);
+    //     background: linear-gradient(90deg, rgba(2,0,36,1) 23%, rgba(2,0,36,1) 24%, rgba(27,191,120,1) 28%, rgba(27,191,120,1) 73%, rgba(255,235,0,1) 75%);
+    //     height: 100%; 
+    //     width: 100%;
+    //  }
+
 }
 
- ion-content{
-     --background: linear-gradient(rgb(13, 144, 252), rgb(10, 194, 10), rgb(219, 130, 12));
-     .image-grid {
-          height: 29vh;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        .image-wrapper {
-          display: flex;
-          flex-direction: row; /* Coloca las imágenes horizontalmente */
-          align-items: center;
-          gap: 0; /* Sin espacio entre imágenes */
-        }
-     .Ax{
-         height: 90px;
-         width: 90px;
-         border: 5px solid rgb(0, 0, 0);
-         position: relative;
-         top: 5vh;
-         //left: 29px;
-         //right: 50px;
-     }
-     .lhc{
-         height: 200px;
-         width: 200px;
-         border: 5px solid rgb(0, 0, 0);
-         margin-left: -20px;
-         //position: absolute;
-         //right: 29px;
-     }
+    ion-footer{
+    ion-avatar{
+        height: 40px;
+        width: 40px;
+    }
+    .footer{
+       //--background: rgb(219, 130, 12);
+       //height: 10vh;
+       .flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .center-g{
+        justify-content: center;
+        align-items: center;
+        padding-left: 8rem;
+       }
+
+    }
  }
+}
 
 
-//propuesta uno
+//**________________________________________________________**
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 480px) {
 
+    ion-content{
+        --background: rgb(27, 24, 24);
+        //--background: linear-gradient(to left bottom, #8c2fd6, #ff0087, #ff4b22, #e4ab00, #72eb12);
+        //--background: linear-gradient(rgb(13, 144, 252), rgb(10, 194, 10), rgb(219, 130, 12));
+        //--background: rgba(168,147,127,255);
+    .space{
+        //background: linear-gradient(rgb(13, 144, 252), rgb(10, 194, 10), rgb(219, 130, 12));
+        background-color: transparent;
+        height: 5px;
+        //width: 100%;
+        ////background: linear-gradient(90deg, var(--ion-color-secondary) 0%, var (--ion-color-primary) 100%);
+        //background: linear-gradient(rgb(13, 144, 252), rgb(10, 194, 10), rgb(219, 130, 12));
+        //transform: rotate(-10deg);
+        //background-image: linear-gradient(to left bottom, #8c2fd6, #ff0087, #ff4b22, #e4ab00, #72eb12);
+        //height: 20rem;
+        //width: 130%;
+        //border-radius: 10px 10px 10px 50px;
+        //margin-top: -3rem;
+        //margin-left: -1rem;
+        //box-shadow: 0 1px 10px rgba(59, 24, 40, 0.5);
+    }
+    //grid para img principales
+    .image-grid {
+        //position: absolute;
+        //top: 7vh;
+        //background: linear-gradient(rgb(13, 144, 252), rgb(10, 194, 10), rgb(219, 130, 12));
+        height: 29vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    //acomodo de imagenes principales
+    .image-wrapper {
+        display: flex;
+        flex-direction: row; /* Coloca las imágenes horizontalmente */
+        align-items: center;
+        gap: 0; /* Sin espacio entre imágenes */
+    }
+    //imagen axolotl
+    .Ax{
+        height: 120px;
+        width: 120px;
+        border: 5px solid rgb(233, 41, 41);
+        position: relative;
+        top: 5vh;
+    }
+    //imagen de los huesos de la ceacion
+    .lhc{
+        height: 250px;
+        width: 250px;
+        border: 5px solid rgb(233, 41, 41);
+        margin-left: -20px;
+    }
+    // .text{
+    //    text-align: justify;
+    //    font-size: 20vh;
+    //    margin-top: 1%;
+    //    color: red;
+    // }
 
+    //card top
+    .card-t{
+        //background: rgba(18,23,43,255);
+        background: rgb(13, 13, 121);
+        width: 100%;
+        margin: 0;
+        margin-bottom: 15px;
+        align-items: center;
+        border-width: 2px 4px;
+        border-radius: 40px;
+        .c-s-t{
+            font-size: 21px;
+            color: white;
+        }
+    }
+    //card-center
+    .card-c{
+        background: rgb(13, 13, 121);
+        width: 100%;
+        margin: 0;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        align-items: center;
+        border-width: 2px 4px;
+        border-radius: 40px;
+        .c-s-c{
+            font-size: 21px;
+            color: white;
+        }
+        .c-c-c{
+            color: white;
+        }
+    }
+    // card-buttom
+    .card-b{
+        //background: rgb(13, 13, 121);
+        background: rgb(27, 24, 24);
+        width: 100%;
+        margin: 0;
+        //margin-top: 40px;
+        margin-bottom: 20px;
+        align-items: center;
+        //border-width: 2px 4px;
+        //border-radius: 40px;
+        .c-s-b{
+            font-size: 21px;
+            color: white;
+        }
+        .c-b-c{
+            color: white;
+        }
+        .c-b-t{
+            color: white;
+        }
+    }
+    //multi card buttom
+    .m-card-b{
+        border-width: 2px 4px;
+        border-radius: 40px;
+        background: rgb(10, 182, 18);
+        color: white;
+    }
+    .m-c-t{
+        color: white;
+    }
+    // .row-g{
+        //       arr der aba izq
+    //    padding: 5px 0px 10px 0px;
+    //    margin: 5px 0px 10px 0px;
+    // }
 
+}
 
-// .Ax {
-//   height: 90px;
-//   width: 90px;
-//   border: 5px solid rgb(148, 233, 11);
-// }
+ion-footer{
 
-// .lhc {
-//   height: 200px;
-//   width: 200px;
-//   border: 5px solid rgb(245, 189, 4);
-//   margin-left: -20px; /* Ajusta la superposición */
-// }
+    ion-avatar{
+        height: 40px;
+        width: 40px;
+    }
+    .footer{
+       --background: rgb(13, 13, 121);
+       //height: 10vh;
+       .flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .center-grid-f{
+        justify-content: center;
+        align-items: center;
+        padding-left: 4rem;
+       }
+    }
+}
+
+}

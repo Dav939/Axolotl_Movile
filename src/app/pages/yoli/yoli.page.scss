@@ -1,5 +1,6 @@
 ion-content{
     --background: linear-gradient(rgb(13, 144, 252), rgb(10, 194, 10), rgb(219, 130, 12));
+    //--background: rgba(168,147,127,255);
     .space{
         background-color: transparent;
         height: 5px;
@@ -20,27 +21,89 @@ ion-content{
     .Ax{
         height: 120px;
         width: 120px;
-        border: 5px solid rgb(226, 59, 59);
+        border: 5px solid rgb(0, 0, 0);
         position: relative;
         top: 5vh;
     }
     .lhc{
         height: 250px;
         width: 250px;
-        border: 5px solid rgb(255, 1, 1);
+        border: 5px solid rgb(0, 0, 0);
         margin-left: -20px;
     }
     .text{
        text-align: justify;
        font-size: 2.2vh;
+       margin-top: 5%;
     }
     .row-g{
        //       arr der aba izq
        padding: 5px 0px 10px 0px;
        margin: 5px 0px 10px 0px;
     }
+    //cards
+    .card-ft{
+        //background: linear-gradient(rgb(0, 0, 0), rgb(10, 194, 10), rgb(236, 240, 28));
+        //background: linear-gradient(90deg, rgb(0, 0, 0), rgb(10, 194, 10) 25%, rgb(236, 240, 28) 90%,);
+        //background: rgb(2,0,36);
+        //background: linear-gradient(90deg, rgba(2,0,36,1) 23%, rgba(2,0,36,1) 24%, rgba(27,191,120,1) 28%, rgba(27,191,120,1) 73%, rgba(255,235,0,1) 75%);
+        background: rgb(51, 184, 69);
+        text-decoration: dashed;
+        height: 100%; 
+        width: 100%;
+     }
+     .card-img-p{
+        //margin-left: 3px;
+        height: 10ch; 
+        width: 10ch;
+     }
+     .card-img-m{
+        //margin-left: 28px;
+        height: 10ch; 
+        width: 10ch;
+     }
+     .card-img-n{
+        //margin-left: 28px;
+        height: 10ch; 
+        width: 10ch;
+     }
+     .card-img-s{
+        //margin-left: 28px;
+        height: 10ch; 
+        width: 10ch;
+     }
+     .h-center{
+        align-items: center;
+     }
+     .g-padding{
+        margin-left: -15px;
+     }
 
 }
+
+
+ion-footer{
+    .footer{
+       --background: rgb(219, 130, 12);
+       //rgb(219, 130, 12)
+       //rgba(168,147,127,255);
+        height: 11vh;
+        .img-footer{
+            height: 8vh;
+            width: auto;
+            padding-bottom: 10px;
+        }
+        .row-footer{
+            align-items: center;
+            margin-left: 0.5vh;
+        }
+        .insta{
+         height: 90px;
+         width: 100px;
+        }
+
+    }
+ }
 
 
 

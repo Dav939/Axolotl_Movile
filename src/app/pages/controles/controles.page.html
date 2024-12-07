@@ -1,28 +1,131 @@
 <app-header titulo="Controles"></app-header>
 
-<ion-content fullscreen="true" class="ion-padding">
-  <!-- Contenido -->
-  <div class="space"></div>
-  
-  <ion-grid class="image-grid">
-  <ion-row class="ion-justify-content-center ion-align-items-center">
-    <div class="image-wrapper">
-      <ion-avatar class="Ax">
-        <ion-img src="../../../assets/img/Ax.jpeg"></ion-img>
-      </ion-avatar>
-      <ion-avatar class="lhc">
-        <ion-img src="../../../assets/img/yoliuno.png"></ion-img>
-      </ion-avatar>
+
+  <ion-content [fullscreen]="true" class="ion-padding">
+
+    <div class="space">
     </div>
-  </ion-row>
-</ion-grid>
+<!-- card top -->
+    <ion-card class="card-t">
+      <ion-card-header>
+        <ion-card-subtitle class="ion-text-center c-s-t">Los Huesos de la Creación</ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>
+<!-- grid   -->
+    <ion-grid class="image-grid">
+      <ion-row class="row-p">
+<!-- grapper -->
+        <div class="image-wrapper">
+          <ion-avatar class="Ax">
+            <ion-img src="../../../assets/img/Ax.jpeg"></ion-img>
+          </ion-avatar>
+          <ion-avatar class="lhc">
+            <ion-img src="../../../assets/img/yoliuno.png"></ion-img>
+          </ion-avatar>
+        </div>
+      </ion-row>
+    </ion-grid>
+
+<!-- grid central -->
+    <ion-grid>
+      <ion-row>
+<!-- card center -->
+        <ion-card class="card-c">
+          <ion-card-header>
+            <ion-card-subtitle class="ion-text-center c-s-c">AXOLOTL GAMES PRESENTA</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content class="ion-text-justify c-c-c">
+            Conoce el divertido videojuego que evoluciona la experiencia de conectar y aprender de la cultura mas grande de todo Mexico!. Adentrate con nosotros y conoce nuestra propuesta.
+          </ion-card-content>
+        </ion-card>
+      </ion-row>
+      <ion-row class="row-g">
+        <ion-img class="img" src="../../../assets/img/gerrero.jpeg"></ion-img>
+      </ion-row>
+      <ion-row>
+<!-- card buttom -->
+        <ion-card class="card-b">
+          <ion-card-header>
+            <ion-card-title class="ion-text-center c-b-t">Los Huesos de la Creacion</ion-card-title>
+          </ion-card-header>
+          <ion-card-content class="ion-text-justify c-b-c">
+            Conoce el divertido videojuego que evoluciona la experiencia de conectar y aprender de la cultura mas grande de todo Mexico!. Adentrate con nosotros y conoce nuestra propuesta.
+          </ion-card-content>
+        </ion-card>
+      </ion-row>
+    </ion-grid>
+
+<!-- grid para muticard -->
+    <ion-grid class="g-padding">
+    <ion-row>
+<!-- multicard personajes -->
+      <ion-col size="6">
+        <ion-card class="m-card-b">
+          <ion-card-header>
+            <img src="../../../assets/img/player.png"/>
+            <ion-card-title class="ion-text-center m-c-t">Personajes</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+<!-- multicard mecanicas -->
+      <ion-col size="6">
+        <ion-card class="m-card-b">
+          <ion-card-header>
+            <img src="../../../assets/img/mecanics.png"/>
+            <ion-card-title class="ion-text-center m-c-t">Mecanicas</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+<!-- multicard nosotros -->
+      <ion-col size="6">
+        <ion-card class="m-card-b">
+          <ion-card-header>
+            <img src="../../../assets/img/team.png"/>
+            <ion-card-title class="ion-text-center m-c-t">Nosotros</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+<!-- multicard productos -->
+        <ion-col size="6">
+        <ion-card class="m-card-b">
+          <ion-card-header>
+            <img src="../../../assets/img/shop.png"/>
+            <ion-card-title class="ion-text-center m-c-t">Productos</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
 
 
 
+  </ion-content>
+
+  <ion-footer collapse="fade">
+    <ion-toolbar class="footer">
+      <ion-title class="ion-text-center">Redes sociales</ion-title>
+      <ion-grid class="center-grid-f">
+        <ion-row class="flex">
+          <ion-col size="4" class="padding">
+            <ion-avatar>
+              <ion-img src="../../../assets/img/fb.png"></ion-img>
+            </ion-avatar>
+          </ion-col>
+          <ion-col size="4">
+            <ion-avatar>
+              <ion-img src="../../../assets/img/twitter.png"></ion-img>
+            </ion-avatar>
+          </ion-col>
+          <ion-col size="4">
+            <ion-avatar>
+              <ion-img src="../../../assets/img/insta-b.png"></ion-img>
+            </ion-avatar>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-footer>
 
 
 
-
-  <!-- Contenido -->
-</ion-content>
