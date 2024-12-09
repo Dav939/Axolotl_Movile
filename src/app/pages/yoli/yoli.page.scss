@@ -120,28 +120,32 @@
 
 }
 
-    ion-footer{
-    ion-avatar{
-        height: 40px;
-        width: 40px;
-    }
-    .footer{
-        --background: rgb(13, 13, 121);
-       //--background: rgb(219, 130, 12);
-       //height: 10vh;
-       .flex{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-       }
-       .center-grid-f{
-        justify-content: center;
-        align-items: center;
-        padding-left: 12rem;
-       }
+   ion-footer{
+      ion-avatar{
+         height: 40px;
+         width: 40px;
+      }
+      .footer{
+          --background: rgb(13, 13, 121);
+         //--background: rgb(219, 130, 12);
+         //height: 10vh;
+         .flex{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+         }
+         .center-grid-f{
+          justify-content: center;
+          align-items: center;
+          padding-left: 12rem;
+         }
+         .r-s{
+        color: white;
+        font-size: 20px;
+      }    
 
-    }
- }
+      }
+   }
 }
 
 
@@ -302,6 +306,10 @@ ion-footer{
         align-items: center;
         padding-left: 4rem;
        }
+      .r-s{
+        color: white;
+        font-size: 20px;
+      }       
     }
 }
 

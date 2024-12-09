@@ -1,308 +1,86 @@
-//**_____________________________________________________________**//
-/* Media Queries para ajustar el diseño en pantallas grandes */
-//**_____________________________________________________________**//
-@media (min-width: 480px) {
+//**___________________________________________________________**//
+//Pantallas Chicas
+//**___________________________________________________________**//
+@media(max-width: 1100px){
     ion-content{
-        --background: rgb(27, 24, 24);
-    //--background: linear-gradient(rgb(13, 144, 252), rgb(10, 194, 10), rgb(219, 130, 12));
-    //--background: rgba(168,147,127,255);
-    .space{
-        background-color: transparent;
-        height: 5px;
-        width: auto;
+    --background: rgb(27,24,24);
+    .card-back{
+        background-color:  rgb(13, 13, 121);
     }
-    .image-grid {
-        height: 29vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .image-wrapper {
-        display: flex;
-        flex-direction: row; /* Coloca las imágenes horizontalmente */
-        align-items: center;
-        gap: 0; /* Sin espacio entre imágenes */
-    }
-    .Ax{
-        height: 120px;
-        width: 120px;
-        border: 5px solid rgb(233, 41, 41);
-        position: relative;
-        top: 5vh;
-    }
-    .lhc{
-        height: 250px;
-        width: 250px;
-        border: 5px solid rgb(233, 41, 41);
-        margin-left: -20px;
-    }
-    //card top
-    .card-t{
-        //background: rgba(18,23,43,255);
-        background: rgb(13, 13, 121);
-        width: 100%;
-        margin: 0;
-        margin-bottom: 40px;
-        align-items: center;
-        border-width: 2px 4px;
-        border-radius: 40px;
-        .c-s-t{
-            font-size: 21px;
-            color: white;
-        }
-    }
-    //card-center
-    .card-c{
-        background: rgb(13, 13, 121);
-        width: 100%;
-        margin: 0;
-        margin-top: 40px;
-        margin-bottom: 40px;
-        align-items: center;
-        border-width: 2px 4px;
-        border-radius: 40px;
-        .c-s-c{
-            font-size: 21px;
-            color: white;
-        }
-        .c-c-c{
-            color: white;
-        }
-    }
-    // card-buttom
-    .card-b{
-        //background: rgb(13, 13, 121);
-        background: rgb(27, 24, 24);
-        width: 100%;
-        margin: 0;
-        //margin-top: 40px;
-        margin-bottom: 20px;
-        align-items: center;
-        //border-width: 2px 4px;
-        //border-radius: 40px;
-        .c-s-b{
-            font-size: 21px;
-            color: white;
-        }
-        .c-b-c{
-            color: white;
-        }
-        .c-b-t{
-            color: white;
-        }
-    }
-    //multi card buttom
-    .m-card-b{
-        border-width: 2px 4px;
-        border-radius: 40px;
-        background: rgb(10, 182, 18);
+    .text-colo{
         color: white;
     }
-    .m-c-t{
-        color: white;
+    .title{
+        font-size: 1.8rem;
     }
-    .row-g{
-        width: auto;
-        align-items: center;
-        justify-content: center;
+    .ion-card-m {
+      margin: 10px;
+      border-radius: 10px;
+      .c-m-s{
+        font-size: 1.3rem;
+        //text-align: center;
+        //@extend .ion-text-center !important;
+        //@extend .ion-text-center;
+      }
     }
-    // .row-g{
-        //       arr der aba izq
-    //    padding: 5px 0px 10px 0px;
-    //    margin: 5px 0px 10px 0px;
-    // }
-    // .text{
-    //    text-align: justify;
-    //    font-size: 2.2vh;
-    //    margin-top: 3%;
-    // }
-
-
+    .ion-c-m-img{
+        object-fit: cover;
+        max-height: 150px;
+        border-radius: 8px;
+        padding-right: 10px;
+        width: 100%; 
+        height: auto; 
+        border-radius: 8px;
+    }
+    
 }
-
-    ion-footer{
-    ion-avatar{
-        height: 40px;
-        width: 40px;
-    }
-    .footer{
-        --background: rgb(13, 13, 121);
-       //--background: rgb(219, 130, 12);
-       //height: 10vh;
-       .flex{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-       }
-       .center-grid-f{
-        justify-content: center;
-        align-items: center;
-        padding-left: 12rem;
-       }
-
-    }
- }
 }
 
 
-//**________________________________________________________**
-/* Media Queries para pantallas pequeñas */
-//**________________________________________________________**
-@media (max-width: 480px) {
 
+
+//**___________________________________________________________**//
+//Pantallas Grandes
+//**___________________________________________________________**//
+@media(min-width: 1100px){
     ion-content{
-        --background: rgb(27, 24, 24);
-        //--background: linear-gradient(to left bottom, #8c2fd6, #ff0087, #ff4b22, #e4ab00, #72eb12);
-        //--background: linear-gradient(rgb(13, 144, 252), rgb(10, 194, 10), rgb(219, 130, 12));
-        //--background: rgba(168,147,127,255);
-    .space{
-        //background: linear-gradient(rgb(13, 144, 252), rgb(10, 194, 10), rgb(219, 130, 12));
-        background-color: transparent;
-        height: 5px;
-        //width: 100%;
-        ////background: linear-gradient(90deg, var(--ion-color-secondary) 0%, var (--ion-color-primary) 100%);
-        //background: linear-gradient(rgb(13, 144, 252), rgb(10, 194, 10), rgb(219, 130, 12));
-        //transform: rotate(-10deg);
-        //background-image: linear-gradient(to left bottom, #8c2fd6, #ff0087, #ff4b22, #e4ab00, #72eb12);
-        //height: 20rem;
-        //width: 130%;
-        //border-radius: 10px 10px 10px 50px;
-        //margin-top: -3rem;
-        //margin-left: -1rem;
-        //box-shadow: 0 1px 10px rgba(59, 24, 40, 0.5);
-    }
-    //grid para img principales
-    .image-grid {
-        //position: absolute;
-        //top: 7vh;
-        //background: linear-gradient(rgb(13, 144, 252), rgb(10, 194, 10), rgb(219, 130, 12));
-        height: 29vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    //acomodo de imagenes principales
-    .image-wrapper {
-        display: flex;
-        flex-direction: row; /* Coloca las imágenes horizontalmente */
-        align-items: center;
-        gap: 0; /* Sin espacio entre imágenes */
-    }
-    //imagen axolotl
-    .Ax{
-        height: 120px;
-        width: 120px;
-        border: 5px solid rgb(233, 41, 41);
-        position: relative;
-        top: 5vh;
-    }
-    //imagen de los huesos de la ceacion
-    .lhc{
-        height: 250px;
-        width: 250px;
-        border: 5px solid rgb(233, 41, 41);
-        margin-left: -20px;
-    }
-    // .text{
-    //    text-align: justify;
-    //    font-size: 20vh;
-    //    margin-top: 1%;
-    //    color: red;
-    // }
-
-    //card top
-    .card-t{
-        //background: rgba(18,23,43,255);
-        background: rgb(13, 13, 121);
-        width: 100%;
-        margin: 0;
-        margin-bottom: 15px;
-        align-items: center;
-        border-width: 2px 4px;
-        border-radius: 40px;
-        .c-s-t{
-            font-size: 21px;
-            color: white;
+        ion-row{
+            align-items: center;
+            justify-content: center;
         }
+    --background:rgb(27, 24, 24);
+    .card-back{
+        background-color:  rgb(13, 13, 121);
     }
-    //card-center
-    .card-c{
-        background: rgb(13, 13, 121);
-        width: 100%;
-        margin: 0;
-        margin-top: 20px;
-        margin-bottom: 40px;
-        align-items: center;
-        border-width: 2px 4px;
-        border-radius: 40px;
-        .c-s-c{
-            font-size: 21px;
-            color: white;
-        }
-        .c-c-c{
-            color: white;
-        }
-    }
-    // card-buttom
-    .card-b{
-        //background: rgb(13, 13, 121);
-        background: rgb(27, 24, 24);
-        width: 100%;
-        margin: 0;
-        //margin-top: 40px;
-        margin-bottom: 20px;
-        align-items: center;
-        //border-width: 2px 4px;
-        //border-radius: 40px;
-        .c-s-b{
-            font-size: 21px;
-            color: white;
-        }
-        .c-b-c{
-            color: white;
-        }
-        .c-b-t{
-            color: white;
-        }
-    }
-    //multi card buttom
-    .m-card-b{
-        border-width: 2px 4px;
-        border-radius: 40px;
-        background: rgb(10, 182, 18);
+    .text-colo{
         color: white;
     }
-    .m-c-t{
-        color: white;
+    .title{
+        font-size: 2rem;
     }
-    // .row-g{
-        //       arr der aba izq
-    //    padding: 5px 0px 10px 0px;
-    //    margin: 5px 0px 10px 0px;
-    // }
-
+    .ion-card-m {
+      margin: 10px;
+      border-radius: 10px;
+      .c-m-s{
+        font-size: 1.3rem;
+        //text-align: center;
+        //@extend .ion-text-center !important;
+        //@extend .ion-text-center;
+      }
+    }
+    .ion-c-m-img{
+        object-fit: cover;
+        max-height: 400px;
+        border-radius: 8px;
+        padding-right: 10px;
+        width: 100%; 
+        height: auto; 
+        border-radius: 8px;
+    }
+    
+}
 }
 
-ion-footer{
 
-    ion-avatar{
-        height: 40px;
-        width: 40px;
-    }
-    .footer{
-       --background: rgb(13, 13, 121);
-       //height: 10vh;
-       .flex{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-       }
-       .center-grid-f{
-        justify-content: center;
-        align-items: center;
-        padding-left: 4rem;
-       }
-    }
-}
 
-}
+
