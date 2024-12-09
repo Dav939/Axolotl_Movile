@@ -1,11 +1,19 @@
 <app-header titulo="Yoli"></app-header>
 
-  <ion-content [fullscreen]="true">
-    <!-- Contenido -->
-    <div class="space"></div>
-  
+<ion-content [fullscreen]="true" class="ion-padding">
+
+    <div class="space">
+    </div>
+<!-- card top -->
+    <ion-card class="card-t">
+      <ion-card-header>
+        <ion-card-subtitle class="ion-text-center c-s-t">Los Huesos de la Creación</ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>
+<!-- grid   -->
     <ion-grid class="image-grid">
-      <ion-row class="ion-justify-content-center ion-align-items-center">
+      <ion-row class="row-p">
+<!-- grapper -->
         <div class="image-wrapper">
           <ion-avatar class="Ax">
             <ion-img src="../../../assets/img/Ax.jpeg"></ion-img>
@@ -17,52 +25,71 @@
       </ion-row>
     </ion-grid>
 
+<!-- grid central -->
     <ion-grid>
       <ion-row>
-        <ion-col class="text">
-          <ion-text> "Text" Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius suscipit voluptates ea, porro, voluptatibus nesciunt aliquid doloremque ad eos placeat odio excepturi provident praesentium dolore voluptate. Voluptas reprehenderit reiciendis doloribus!</ion-text>
-        </ion-col>
+<!-- card center -->
+        <ion-card class="card-c">
+          <ion-card-header>
+            <ion-card-subtitle class="ion-text-center c-s-c">AXOLOTL GAMES PRESENTA</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content class="ion-text-justify c-c-c">
+            Conoce el divertido videojuego que evoluciona la experiencia de conectar y aprender de la cultura mas grande de todo Mexico!. Adentrate con nosotros y conoce nuestra propuesta.
+          </ion-card-content>
+        </ion-card>
       </ion-row>
       <ion-row class="row-g">
         <ion-img class="img" src="../../../assets/img/gerrero.jpeg"></ion-img>
       </ion-row>
-      <ion-row class="text">
-          <ion-text> "Text" Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius suscipit voluptates ea, porro, voluptatibus nesciunt aliquid doloremque ad eos placeat odio excepturi provident praesentium dolore voluptate. Voluptas reprehenderit reiciendis doloribus!</ion-text>
+      <ion-row>
+<!-- card buttom -->
+        <ion-card class="card-b">
+          <ion-card-header>
+            <ion-card-title class="ion-text-center c-b-t">Los Huesos de la Creacion</ion-card-title>
+          </ion-card-header>
+          <ion-card-content class="ion-text-justify c-b-c">
+            Conoce el divertido videojuego que evoluciona la experiencia de conectar y aprender de la cultura mas grande de todo Mexico!. Adentrate con nosotros y conoce nuestra propuesta.
+          </ion-card-content>
+        </ion-card>
       </ion-row>
     </ion-grid>
 
-
+<!-- grid para muticard -->
     <ion-grid class="g-padding">
     <ion-row>
+<!-- multicard personajes -->
       <ion-col size="6">
-        <ion-card class="card-ft">
-          <ion-card-header class="h-center">
-            <img class="card-img-p" src="../../../assets/img/player.png"/>
-            <ion-card-title>Personajes</ion-card-title>
+        <ion-card class="m-card-b">
+          <ion-card-header>
+            <img src="../../../assets/img/player.png"/>
+            <ion-card-title class="ion-text-center m-c-t">Personajes</ion-card-title>
           </ion-card-header>
         </ion-card>
       </ion-col>
+<!-- multicard mecanicas -->
       <ion-col size="6">
-        <ion-card class="card-ft">
-          <ion-card-header class="h-center">
-            <img class="card-img-m" src="../../../assets/img/mecanics.png"/>
-            <ion-card-title>Mecanicas</ion-card-title>
+        <ion-card class="m-card-b">
+          <ion-card-header>
+            <img src="../../../assets/img/mecanics.png"/>
+            <ion-card-title class="ion-text-center m-c-t">Mecanicas</ion-card-title>
           </ion-card-header>
         </ion-card>
       </ion-col>
+<!-- multicard nosotros -->
       <ion-col size="6">
-        <ion-card class="card-ft">
-          <ion-card-header class="h-center">
-            <img class="card-img-n" src="../../../assets/img/team.png"/>
-            <ion-card-title>Nosotros</ion-card-title>
+        <ion-card class="m-card-b">
+          <ion-card-header>
+            <img src="../../../assets/img/team.png"/>
+            <ion-card-title class="ion-text-center m-c-t">Nosotros</ion-card-title>
           </ion-card-header>
         </ion-card>
       </ion-col>
+<!-- multicard productos -->
         <ion-col size="6">
-        <ion-card class="card-ft">
-          <ion-card-header class="h-center">
-            <img class="card-img-s" src="../../../assets/img/shop.png"/>
-            <ion-card-title>Productos</ion-card-title>
+        <ion-card class="m-card-b">
+          <ion-card-header>
+            <img src="../../../assets/img/shop.png"/>
+            <ion-card-title class="ion-text-center m-c-t">Productos</ion-card-title>
           </ion-card-header>
         </ion-card>
       </ion-col>
@@ -74,21 +101,30 @@
 
   </ion-content>
 
-<ion-footer collapse="fade">
-  <ion-toolbar class="footer">
-    <ion-title class="ion-text-center">Redes sociales</ion-title>
-  <ion-row class="row-footer">
-    <ion-col size="4">
-      <ion-img class="img-footer" src="../../../assets/img/fb.png"></ion-img>
-    </ion-col>
-    <ion-col size="4">
-      <ion-img class="img-footer" src="../../../assets/img/insta.png"></ion-img>
-    </ion-col>
-    <ion-col size="4">
-      <ion-img class="img-footer" src="../../../assets/img/twitter.png"></ion-img>
-    </ion-col>
-  </ion-row>
-  </ion-toolbar>
-</ion-footer>
+  <ion-footer collapse="fade">
+    <ion-toolbar class="footer">
+      <ion-title class="ion-text-center">Redes sociales</ion-title>
+      <ion-grid class="center-grid-f">
+        <ion-row class="flex">
+          <ion-col size="4" class="padding">
+            <ion-avatar>
+              <ion-img src="../../../assets/img/fb.png"></ion-img>
+            </ion-avatar>
+          </ion-col>
+          <ion-col size="4">
+            <ion-avatar>
+              <ion-img src="../../../assets/img/twitter.png"></ion-img>
+            </ion-avatar>
+          </ion-col>
+          <ion-col size="4">
+            <ion-avatar>
+              <ion-img src="../../../assets/img/insta-b.png"></ion-img>
+            </ion-avatar>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-footer>
+
 
 
