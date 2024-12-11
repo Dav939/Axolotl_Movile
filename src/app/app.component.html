@@ -1,0 +1,48 @@
+<ion-app>
+  <!-- Menu -->
+  <ion-menu side="start" menuId="first" contentId="main">
+
+    <ion-header class="ion-no-border">
+      <div class="bg"></div>
+      <ion-item lines="none">
+      <ion-avatar slot="start" class="avbase">
+      <img src="../assets/img/Ax.jpeg" alt="Axolotl">
+      </ion-avatar>
+      <ion-label color="light">
+        {{profile.name}}
+        <p>
+          <ion-text color="light">
+            {{profile.email}}
+          </ion-text>
+        </p>
+      </ion-label>
+      </ion-item>
+    </ion-header>
+
+    <ion-content>
+      @for(page of elementos; track $index){
+        <ion-menu-toggle class="menu-items">
+        <ion-item 
+        lines="none"
+        class="ion-padding-start ion-margin-top"
+        [ngClass]="{'selected': page?.active}"
+        (click)="onItemTap(page)"
+        [routerLink]="page.ruta"
+        >
+          <ion-icon 
+          slot="start"
+          [ios]="page.icono"
+          [md]="page.icono">
+          </ion-icon>
+
+        <ion-label>{{page.nombre}}</ion-label>
+        </ion-item>
+        </ion-menu-toggle>
+      }
+    </ion-content>
+
+  </ion-menu>
+  <!-- Menu -->
+
+  <ion-router-outlet id="main" aria-hidden="false"></ion-router-outlet>
+</ion-app>

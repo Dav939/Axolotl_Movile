@@ -1,0 +1,92 @@
+<app-header titulo="Items"></app-header>
+
+<ion-content fullscreen="true" class="ion-padding">
+  <ion-grid>
+    <ion-row>
+      <ion-card class="card-t card-t">
+        <ion-img src="../../../assets/img/test/items.webp"></ion-img>
+        <ion-card-header>
+          <ion-card-subtitle class="ion-text-center text-colo title">Items</ion-card-subtitle>
+        </ion-card-header>
+          <ion-card-content class="ion-text-center text-colo">¿Que powe ups puedo encontrar dentro del juego? </ion-card-content>
+      </ion-card>
+    </ion-row>
+
+    <ion-row>
+      <ion-card *ngFor="let item of items" class="ion-card-m card-deg">
+        <ion-card-content>
+          <ion-grid class="ion-align-items-center">
+            <ion-row>
+              <!-- Imagen a la izquierda -->
+              <ion-col size="4" class="ion-no-padding">
+                <ion-img 
+                  [src]="item.data.imagen" 
+                  alt="Imagen"
+                  class="ion-c-m-img">
+                </ion-img>
+              </ion-col>
+              <!-- Texto a la derecha -->
+              <ion-col size="8">
+                <ion-card-subtitle class="c-m-s text-colo"><strong>{{item.data.nombre}}</strong></ion-card-subtitle>
+                <p class="ion-text-justify text-colo">
+                  Efecto: {{item.data.efecto}} 
+                  {{item.data.descripcion}}
+                </p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+      </ion-card>
+    </ion-row>
+    
+  </ion-grid>
+
+
+
+</ion-content>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <ion-img src="../../../assets/img/im/img1.jpeg"></ion-img>
+    <ion-img src="../../../assets/img/im/img2.jpeg"></ion-img>
+    <ion-img src="../../../assets/img/im/img3.jpeg"></ion-img>
+    <ion-img src="../../../assets/img/im/img4.jpeg"></ion-img>
+    <ion-img src="../../../assets/img/im/img5.jpeg"></ion-img>
+    <ion-img src="../../../assets/img/im/img6.jpeg"></ion-img>
+    <ion-img src="../../../assets/img/im/img7.jpeg"></ion-img>
+    <ion-img src="../../../assets/img/im/img8.jpeg"></ion-img>
+    <ion-img src="../../../assets/img/im/img9.jpeg"></ion-img>
+    <ion-img src="../../../assets/img/im/img10.jpeg"></ion-img>
+    <ion-img src="../../../assets/img/im/img11.jpeg"></ion-img>
+    <ion-img src="../../../assets/img/im/img12.jpeg"></ion-img>
+    <ion-img src="../../../assets/img/im/img13.jpeg"></ion-img>
+    <ion-img src="../../../assets/img/im/img14.jpeg"></ion-img>
+    <ion-img src="../../../assets/img/im/img15.jpeg"></ion-img>
+    <ion-img src="../../../assets/img/im/img16.jpeg"></ion-img>
+    <ion-img src="../../../assets/img/im/img17.jpeg"></ion-img>
+    <ion-img src="../../../assets/img/im/img18.jpeg"></ion-img>
+    <ion-img src="../../../assets/img/im/img19.jpeg"></ion-img>
+    <ion-img src="../../../assets/img/im/img20.jpeg"></ion-img>
+    <ion-img src="../../../assets/img/im/img21.jpeg"></ion-img> -->
+
+            <!-- <ion-item href="#">
+              <ion-label>Anchor Item</ion-label>
+            </ion-item>
+            <ion-item href="#" disabled="true">
+              <ion-label>Disabled Anchor Item</ion-label>
+            </ion-item>
+            <ion-item button>
+              <ion-label>Button Item</ion-label>
+            </ion-item>
+            <ion-item button disabled="true">
+              <ion-label>Disabled Button Item</ion-label>
+            </ion-item> -->

@@ -1,0 +1,308 @@
+<app-header titulo="Controles"></app-header>
+
+<ion-content fullscreen="true" class="ion-padding">
+  <ion-grid>
+    <ion-row>
+      <ion-card class="card-t card-t">
+        <ion-img src="../../../assets/img/test/controls.webp"></ion-img>
+        <ion-card-header>
+          <ion-card-subtitle class="ion-text-center text-colo title">Controles</ion-card-subtitle>
+        </ion-card-header>
+          <ion-card-content class="ion-text-center text-colo">¿De que manera voy a jugar? </ion-card-content>
+      </ion-card>
+    </ion-row>
+
+    <ion-row>
+      <ion-card class="ion-card-m card-deg">
+        <ion-card-content>
+          <ion-grid class="ion-align-items-center">
+            <ion-row>
+              <!-- Imagen a la izquierda -->
+              <ion-col size="4" class="ion-no-padding">
+                <ion-img 
+                  src="../../../assets/img/cntrl/camara.png" 
+                  alt="Imagen"
+                  class="ion-c-m-img">
+                </ion-img>
+              </ion-col>
+              <!-- Texto a la derecha -->
+              <ion-col size="8">
+                <ion-card-subtitle class="c-m-s text-colo"><strong>Camara</strong></ion-card-subtitle>
+                <p class="ion-text-justify text-colo">
+                  La camara se controla con el {{controles[0].data.camara}}</p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+      </ion-card>
+    </ion-row>
+    <ion-row>
+      <ion-card class="ion-card-m card-b">
+        <ion-card-content>
+          <ion-grid class="ion-align-items-center">
+            <ion-row>
+              <!-- Imagen a la izquierda -->
+              <ion-col size="4" class="ion-no-padding">
+                <ion-img 
+                  src="../../../assets/img/cntrl/figth.png" 
+                  alt="Imagen"
+                  class="ion-c-m-img">
+                </ion-img>
+              </ion-col>
+              <!-- Texto a la derecha -->
+              <ion-col size="8">
+                <ion-card-subtitle class="c-m-s text-colo"><strong>Cuerpo a Cuerpo</strong></ion-card-subtitle>
+                <p class="ion-text-justify text-colo">
+                  Para pelear cuerpo a cuerpo debes usar {{controles[0].data.cuerpoacuerpo}}</p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+      </ion-card>
+    </ion-row>
+    <ion-row>
+      <ion-card class="ion-card-m card-deg">
+        <ion-card-content>
+          <ion-grid class="ion-align-items-center">
+            <ion-row>
+              <!-- Imagen a la izquierda -->
+              <ion-col size="4" class="ion-no-padding">
+                <ion-img 
+                  src="../../../assets/img/cntrl/curar.png" 
+                  alt="Imagen"
+                  class="ion-c-m-img">
+                </ion-img>
+              </ion-col>
+              <!-- Texto a la derecha -->
+              <ion-col size="8">
+                <ion-card-subtitle class="c-m-s text-colo"><strong>Curacion</strong></ion-card-subtitle>
+                <p class="ion-text-justify text-colo">
+                  Cuando necesites curarte usaras {{controles[0].data.curacion}}</p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+      </ion-card>
+    </ion-row>
+    <ion-row>
+      <ion-card class="ion-card-m card-b">
+        <ion-card-content>
+          <ion-grid class="ion-align-items-center">
+            <ion-row>
+              <!-- Imagen a la izquierda -->
+              <ion-col size="4" class="ion-no-padding">
+                <ion-img 
+                  src="../../../assets/img/cntrl/shot.png" 
+                  alt="Imagen"
+                  class="ion-c-m-img">
+                </ion-img>
+              </ion-col>
+              <!-- Texto a la derecha -->
+              <ion-col size="8">
+                <ion-card-subtitle class="c-m-s text-colo"><strong>Disparo</strong></ion-card-subtitle>
+                <p class="ion-text-justify text-colo">
+                  Para utilizar un ataque de larga distancia {{controles[0].data.disparo}}</p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+      </ion-card>
+    </ion-row>
+    <ion-row>
+      <ion-card class="ion-card-m card-deg">
+        <ion-card-content>
+          <ion-grid class="ion-align-items-center">
+            <ion-row>
+              <!-- Imagen a la izquierda -->
+              <ion-col size="4" class="ion-no-padding">
+                <ion-img 
+                  src="../../../assets/img/cntrl/evacion.png" 
+                  alt="Imagen"
+                  class="ion-c-m-img">
+                </ion-img>
+              </ion-col>
+              <!-- Texto a la derecha -->
+              <ion-col size="8">
+                <ion-card-subtitle class="c-m-s text-colo"><strong>Evacion</strong></ion-card-subtitle>
+                <p class="ion-text-justify text-colo">
+                  Para evadir un ataque enemigo preciona {{controles[0].data.evasion}}</p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+      </ion-card>
+    </ion-row>
+    <ion-row>
+      <ion-card class="ion-card-m card-b">
+        <ion-card-content>
+          <ion-grid class="ion-align-items-center">
+            <ion-row>
+              <!-- Imagen a la izquierda -->
+              <ion-col size="4" class="ion-no-padding">
+                <ion-img 
+                  src="../../../assets/img/cntrl/icons8-launch-box-100.png" 
+                  alt="Imagen"
+                  class="ion-c-m-img">
+                </ion-img>
+              </ion-col>
+              <!-- Texto a la derecha -->
+              <ion-col size="8">
+                <ion-card-subtitle class="c-m-s text-colo"><strong>Interacciones</strong></ion-card-subtitle>
+                <p class="ion-text-justify text-colo">
+                  Cuando necesites interactuar con algun NPC {{controles[0].data.interacciones}}</p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+      </ion-card>
+    </ion-row>
+    <ion-row>
+      <ion-card class="ion-card-m card-deg">
+        <ion-card-content>
+          <ion-grid class="ion-align-items-center">
+            <ion-row>
+              <!-- Imagen a la izquierda -->
+              <ion-col size="4" class="ion-no-padding">
+                <ion-img 
+                  src="../../../assets/img/cntrl/invantori.png" 
+                  alt="Imagen"
+                  class="ion-c-m-img">
+                </ion-img>
+              </ion-col>
+              <!-- Texto a la derecha -->
+              <ion-col size="8">
+                <ion-card-subtitle class="c-m-s text-colo"><strong>Inventario</strong></ion-card-subtitle>
+                <p class="ion-text-justify text-colo">
+                  Revisa tu inventario con {{controles[0].data.inventario}}</p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+      </ion-card>
+    </ion-row>
+    <ion-row>
+      <ion-card class="ion-card-m card-b">
+        <ion-card-content>
+          <ion-grid class="ion-align-items-center">
+            <ion-row>
+              <!-- Imagen a la izquierda -->
+              <ion-col size="4" class="ion-no-padding">
+                <ion-img 
+                  src="../../../assets/img/cntrl/linterna.png" 
+                  alt="Imagen"
+                  class="ion-c-m-img">
+                </ion-img>
+              </ion-col>
+              <!-- Texto a la derecha -->
+              <ion-col size="8">
+                <ion-card-subtitle class="c-m-s text-colo"><strong>Linterna</strong></ion-card-subtitle>
+                <p class="ion-text-justify text-colo">
+                  ¿Esta obscuro, no puedes ver? {{controles[0].data.linterna}}</p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+      </ion-card>
+    </ion-row>
+    <ion-row>
+      <ion-card class="ion-card-m card-deg">
+        <ion-card-content>
+          <ion-grid class="ion-align-items-center">
+            <ion-row>
+              <!-- Imagen a la izquierda -->
+              <ion-col size="4" class="ion-no-padding">
+                <ion-img 
+                  src="../../../assets/img/cntrl/movimiento.png" 
+                  alt="Imagen"
+                  class="ion-c-m-img">
+                </ion-img>
+              </ion-col>
+              <!-- Texto a la derecha -->
+              <ion-col size="8">
+                <ion-card-subtitle class="c-m-s text-colo"><strong>Moverte</strong></ion-card-subtitle>
+                <p class="ion-text-justify text-colo">
+                  Las clasicas teclas de {{controles[0].data.movimiento}}</p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+      </ion-card>
+    </ion-row>
+    <ion-row>
+      <ion-card class="ion-card-m card-b">
+        <ion-card-content>
+          <ion-grid class="ion-align-items-center">
+            <ion-row>
+              <!-- Imagen a la izquierda -->
+              <ion-col size="4" class="ion-no-padding">
+                <ion-img 
+                  src="../../../assets/img/cntrl/pausa.png" 
+                  alt="Imagen"
+                  class="ion-c-m-img">
+                </ion-img>
+              </ion-col>
+              <!-- Texto a la derecha -->
+              <ion-col size="8">
+                <ion-card-subtitle class="c-m-s text-colo"><strong>Pausa</strong></ion-card-subtitle>
+                <p class="ion-text-justify text-colo">
+                  ¿Necesitas pausar el juego? {{controles[0].data.pausa}}</p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+      </ion-card>
+    </ion-row>
+    <ion-row>
+      <ion-card class="ion-card-m card-deg">
+        <ion-card-content>
+          <ion-grid class="ion-align-items-center">
+            <ion-row>
+              <!-- Imagen a la izquierda -->
+              <ion-col size="4" class="ion-no-padding">
+                <ion-img 
+                  src="../../../assets/img/cntrl/reload.png" 
+                  alt="Imagen"
+                  class="ion-c-m-img">
+                </ion-img>
+              </ion-col>
+              <!-- Texto a la derecha -->
+              <ion-col size="8">
+                <ion-card-subtitle class="c-m-s text-colo"><strong>Recarga</strong></ion-card-subtitle>
+                <p class="ion-text-justify text-colo">
+                  O no te quedaste sin flechas recarga con {{controles[0].data.recargar}}</p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+      </ion-card>
+    </ion-row>
+     <ion-row>
+      <ion-card class="ion-card-m card-b">
+        <ion-card-content>
+          <ion-grid class="ion-align-items-center">
+            <ion-row>
+              <!-- Imagen a la izquierda -->
+              <ion-col size="4" class="ion-no-padding">
+                <ion-img 
+                  src="../../../assets/img/cntrl/sigilo.png" 
+                  alt="Imagen"
+                  class="ion-c-m-img">
+                </ion-img>
+              </ion-col>
+              <!-- Texto a la derecha -->
+              <ion-col size="8">
+                <ion-card-subtitle class="c-m-s text-colo"><strong>Sigilo</strong></ion-card-subtitle>
+                <p class="ion-text-justify text-colo">
+                  No quieres que te detecten usa sigilo {{controles[0].data.sigilo}}</p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+      </ion-card>
+    </ion-row>
+  </ion-grid>
+<br>
+<br>
+
+</ion-content>
+

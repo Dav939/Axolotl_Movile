@@ -1,0 +1,10 @@
+{
+  "name": "Axolotl_Movile",
+  "integrations": {
+    "capacitor": {
+      "enabled": false
+    },
+    "cordova": {}
+  },
+  "type": "angular"
+}

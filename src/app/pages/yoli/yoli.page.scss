@@ -1,0 +1,413 @@
+//**_____________________________________________________________**//
+/* Media Queries para ajustar el diseño en pantallas grandes */
+//**_____________________________________________________________**//
+@media (min-width: 480px) {
+    ion-content{
+        //--background: rgb(27, 24, 24);
+        --background: rgba(215,215,215,255);
+    //--background: linear-gradient(rgb(13, 144, 252), rgb(10, 194, 10), rgb(219, 130, 12));
+    //--background: rgba(168,147,127,255);
+    .space{
+        background-color: transparent;
+        height: 5px;
+        width: auto;
+    }
+    .image-grid {
+        height: 29vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .image-wrapper {
+        display: flex;
+        flex-direction: row; /* Coloca las imágenes horizontalmente */
+        align-items: center;
+        gap: 0; /* Sin espacio entre imágenes */
+    }
+    .Ax{
+        height: 120px;
+        width: 120px;
+        border: 5px solid rgb(233, 41, 41);
+        position: relative;
+        top: 5vh;
+    }
+    .lhc{
+        height: 250px;
+        width: 250px;
+        border: 5px solid rgb(233, 41, 41);
+        margin-left: -20px;
+    }
+    //card top
+    .card-t{
+        //background: rgba(18,23,43,255);
+        //background: rgb(13, 13, 121);
+        background: rgba(33,150,243,255);
+        width: 100%;
+        margin: 0;
+        margin-bottom: 40px;
+        align-items: center;
+        //border-width: 2px 4px;
+        //border-radius: 40px;
+        .c-s-t{
+            font-size: 21px;
+            color: white;
+        }
+        .c-b-c{
+            color: white;
+        }
+        .c-b-t{
+            color: white;
+        }
+    }
+    //card-center
+    .card-c{
+        //background: rgb(13, 13, 121);
+        background: rgba(76,175,80,255);
+        width: 100%;
+        margin: 0;
+
+        //margin-top: 40px;
+        margin-bottom: 40px;
+        align-items: center;
+        //border-width: 2px 4px;
+        //border-radius: 40px;
+        .c-s-c{
+            font-size: 21px;
+            color: white;
+        }
+        .c-c-c{
+            color: white;
+        }
+        .c-s-c{
+            font-size: 21px;
+            color: white;
+        }
+        .c-c-c{
+            color: white;
+        }        .c-s-b{
+            font-size: 21px;
+            color: white;
+        }
+        .c-b-c{
+            color: white;
+        }
+        .c-b-t{
+            color: white;
+        }
+    }
+    // card-buttom
+    .card-b{
+        //background: rgb(13, 13, 121);
+        //background: rgb(27, 24, 24);
+        background: rgba(33,150,243,255);
+        width: 100%;
+        margin: 0;
+        //margin-top: 40px;
+        margin-bottom: 20px;
+        align-items: center;
+        //border-width: 2px 4px;
+        //border-radius: 40px;
+        .c-s-b{
+            font-size: 21px;
+            color: white;
+        }
+        .c-b-c{
+            color: white;
+        }
+        .c-b-t{
+            color: white;
+        }
+    }
+    //multi card buttom
+    .m-card-b{
+        //background: rgb(10, 182, 18);
+        background: rgba(76,175,80,255);
+        border-width: 2px 4px;
+        border-radius: 40px;
+        color: white;
+    }
+    .m-c-t{
+        color: white;
+    }
+    .row-g{
+        width: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    // .row-g{
+        //       arr der aba izq
+    //    padding: 5px 0px 10px 0px;
+    //    margin: 5px 0px 10px 0px;
+    // }
+    // .text{
+    //    text-align: justify;
+    //    font-size: 2.2vh;
+    //    margin-top: 3%;
+    // }
+
+
+}
+
+   ion-footer{
+    height: 5rem;
+      ion-avatar{
+         height: 40px;
+         width: 40px;
+      }
+      .footer{
+        //--background: rgb(13, 13, 121);
+         //--background: rgb(219, 130, 12);
+         //height: 10vh;
+        --background: linear-gradient(135deg, rgb(203, 206, 29) 30%, rgb(10, 182, 18));
+         .flex{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+         }
+         .center-grid-f{
+          justify-content: center;
+          align-items: center;
+          padding-left: 12rem;
+         }
+         .r-s{
+        color: white;
+        font-size: 20px;
+        }
+        .img-insta{
+        //height: 43px;
+        //width: 43px;
+        //background: white;
+        //border-width: 2px 40px;
+        //background: white;
+        height: 70px;
+        width: 70px;
+        border-radius: 40px;
+        }
+        .col-f{
+            height: 5rem;
+        }  
+            
+
+      }
+   }
+}
+
+
+//**________________________________________________________**
+/* Media Queries para pantallas pequeñas */
+//**________________________________________________________**
+@media (max-width: 480px) {
+
+    ion-content{
+        //--background: rgb(27, 24, 24);
+        //gris
+        --background: rgba(215,215,215,255);
+        //--background: linear-gradient(to left bottom, #8c2fd6, #ff0087, #ff4b22, #e4ab00, #72eb12);
+        //--background: linear-gradient(rgb(13, 144, 252), rgb(10, 194, 10), rgb(219, 130, 12));
+        //--background: rgba(168,147,127,255);
+    .space{
+        //background: linear-gradient(rgb(13, 144, 252), rgb(10, 194, 10), rgb(219, 130, 12));
+        background-color: transparent;
+        height: 5px;
+        //width: 100%;
+        ////background: linear-gradient(90deg, var(--ion-color-secondary) 0%, var (--ion-color-primary) 100%);
+        //background: linear-gradient(rgb(13, 144, 252), rgb(10, 194, 10), rgb(219, 130, 12));
+        //transform: rotate(-10deg);
+        //background-image: linear-gradient(to left bottom, #8c2fd6, #ff0087, #ff4b22, #e4ab00, #72eb12);
+        //height: 20rem;
+        //width: 130%;
+        //border-radius: 10px 10px 10px 50px;
+        //margin-top: -3rem;
+        //margin-left: -1rem;
+        //box-shadow: 0 1px 10px rgba(59, 24, 40, 0.5);
+    }
+    //grid para img principales
+    .image-grid {
+        //position: absolute;
+        //top: 7vh;
+        //background: linear-gradient(rgb(13, 144, 252), rgb(10, 194, 10), rgb(219, 130, 12));
+        height: 29vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    //acomodo de imagenes principales
+    .image-wrapper {
+        display: flex;
+        flex-direction: row; /* Coloca las imágenes horizontalmente */
+        align-items: center;
+        gap: 0; /* Sin espacio entre imágenes */
+    }
+    //imagen axolotl
+    .Ax{
+        height: 120px;
+        width: 120px;
+        border: 5px solid rgb(233, 41, 41);
+        position: relative;
+        top: 5vh;
+    }
+    //imagen de los huesos de la ceacion
+    .lhc{
+        height: 250px;
+        width: 250px;
+        border: 5px solid rgb(233, 41, 41);
+        margin-left: -20px;
+    }
+    // .text{
+    //    text-align: justify;
+    //    font-size: 20vh;
+    //    margin-top: 1%;
+    //    color: red;
+    // }
+
+    //card top
+    .card-t{
+        //background: rgba(18,23,43,255);
+        //background: rgb(13, 13, 121);
+        //verde
+        // background: rgba(76,175,80,255);
+        // azul
+        background: rgba(33,150,243,255);
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+        align-items: center;
+        //border-width: 2px 4px;
+        //border-radius: 40px;
+        .c-s-t{
+            font-size: 21px;
+            color: white;
+        }
+        .c-b-c{
+            color: white;
+        }
+        .c-b-t{
+            color: white;
+        }
+    }
+    //card-center
+    .card-c{
+        //background: rgb(13, 13, 121);
+        //azul
+        // background: rgba(33,150,243,255);
+        // verde
+        background: rgba(76,175,80,255);
+        width: 100%;
+        margin: 0;
+        margin-top: 0;
+        margin-bottom: 20px;
+        align-items: center;
+        //border-width: 2px 4px;
+        //border-radius: 40px;
+        .c-s-c{
+            font-size: 21px;
+            color: white;
+        }
+        .c-c-c{
+            color: white;
+        }        .c-s-b{
+            font-size: 21px;
+            color: white;
+        }
+        .c-b-c{
+            color: white;
+        }
+        .c-b-t{
+            color: white;
+        }
+    }
+    // card-buttom
+    .card-b{
+        //background: rgb(13, 13, 121);
+        //background: rgb(27, 24, 24);
+        // verde
+        // background: rgba(76,175,80,255);
+        // azul
+        background: rgba(33,150,243,255);
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+        align-items: center;
+        .c-s-b{
+            font-size: 21px;
+            color: white;
+        }
+        .c-b-c{
+            color: white;
+        }
+        .c-b-t{
+            color: white;
+        }
+    }
+    //multi card buttom
+    .m-card-b{
+        //background: rgb(10, 182, 18);
+        //background: rgba(76,175,80,255);
+        //background: rgba(76,175,80,255);
+        //azul
+        // background: rgba(33,150,243,255);
+        // verde
+        background: rgba(76,175,80,255);
+        border-width: 2px 4px;
+        border-radius: 40px;
+        color: white;
+    }
+    .m-c-t{
+        color: white;
+        font-size: 23px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    // .row-g{
+        //       arr der aba izq
+    //    padding: 5px 0px 10px 0px;
+    //    margin: 5px 0px 10px 0px;
+    // }
+
+}
+
+ion-footer{
+
+    ion-avatar{
+        height: 40px;
+        width: 40px;
+    }
+    .footer{
+        //background: transparent;
+        //--background: black;
+        //--background: rgba(215,215,215,255);
+        //--background: linear-gradient(135deg, rgb(10, 182, 18) 30%, rgb(233, 236, 20));
+        --background: linear-gradient(135deg, rgb(203, 206, 29) 30%, rgb(10, 182, 18));
+       //--background: red;
+       //--background: rgb(13, 13, 121);
+       //naranja-dorado
+       //--background: rgba(255,193,7,255);
+       //height: 10vh;
+       .flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .center-grid-f{
+        justify-content: center;
+        align-items: center;
+        padding-left: 4rem;
+       }
+      .r-s{
+        color: white;
+        font-size: 20px;
+      }
+      .img-insta{
+        height: 50%;
+        width: 50%;
+        //height: 43px;
+        //width: 43px;
+        //background: white;
+        //border-width: 2px 40px;
+        border-radius: 40px;
+        //background: white;
+      }       
+    }
+}
+
+}
