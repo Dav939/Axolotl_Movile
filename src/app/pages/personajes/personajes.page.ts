@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
 import { Datos, Personajes } from 'src/app/interfaces/interfaces';
 import { FirebaseService } from 'src/app/services/firebase.service';
+import { DetPersonajeComponent } from 'src/app/componentes/det-personaje/det-personaje.component';
 
 @Component({
   selector: 'app-personajes',
@@ -11,13 +13,15 @@ export class PersonajesPage implements OnInit {
 
   personajes: Datos[] = [];
 
-  constructor(private servicioFirebase: FirebaseService) { }
+  constructor(
+    private servicioFirebase: FirebaseService,
+    private modalCtrl: ModalController
+  ) { }
 
-  async verDetalle(id: string) {
-
-  }
 
   ngOnInit() {
+
+
     this.servicioFirebase.getDatos().subscribe((response) => {
       console.log(response[0].payload.doc)
       response.forEach(obj => {
@@ -28,5 +32,17 @@ export class PersonajesPage implements OnInit {
       });
     });
   }
+
+
+
+  async verDetalle(id: string) {
+    const modal = await this.modalCtrl.create({
+      component: DetPersonajeComponent,
+      componentProps: { id }
+    });
+    modal.present();
+  }
+
+
 
 }

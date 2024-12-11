@@ -16,7 +16,17 @@ export class FirebaseService {
   }
 
   getDetalle(id: string) {
-    return this.firestore.collection('personajes').doc(id).valueChanges();
+    return this.firestore.collection('personajes').doc<Personajes>(id).valueChanges();
+  }
+
+  getControles() {
+    return this.firestore.collection('controles').snapshotChanges();
+  }
+  getItems() {
+    return this.firestore.collection('items').snapshotChanges();
+  }
+  getMercancia() {
+    return this.firestore.collection('mercancia').snapshotChanges();
   }
 
 }

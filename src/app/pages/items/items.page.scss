@@ -3,9 +3,38 @@
 //**___________________________________________________________**//
 @media(max-width: 1100px){
     ion-content{
-    --background: rgb(27,24,24);
-    .card-back{
-        background-color:  rgb(13, 13, 121);
+    //--background: rgb(27,24,24);
+    --background: rgba(215,215,215,255);
+    .card-t{
+        //verde
+        //background: rgba(76,175,80,255);
+        //azul
+        //background: rgba(33,150,243,255);
+        //background-color:  rgb(13, 13, 121);
+        background: linear-gradient(135deg, rgb(203, 206, 29) 30%, rgb(10, 182, 18));
+    }
+    .card-deg{
+        //verde
+        //background: rgba(76,175,80,255);
+        //azul
+        //background: rgba(33,150,243,255);
+        //background-color:  rgb(13, 13, 121);
+        background: linear-gradient(135deg, rgb(203, 206, 29) 30%, rgb(10, 182, 18));
+    }
+    .card-g{
+        //verde
+        background: rgba(76,175,80,255);
+        //azul
+        //background: rgba(33,150,243,255);
+        //background-color:  rgb(13, 13, 121);
+        //background: linear-gradient(135deg, rgb(203, 206, 29) 30%, rgb(10, 182, 18));
+    }
+    .card-b{
+        //verde
+        //background: rgba(76,175,80,255);
+        //azul
+        background: rgba(33,150,243,255);
+        //background-color:  rgb(13, 13, 121);
     }
     .text-colo{
         color: white;

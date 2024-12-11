@@ -2,15 +2,15 @@
 
       <!-- Aqui va el contenido -->
       <ion-content>
-      <ion-card *ngFor="let personaje of personajes">
+      <ion-card *ngFor="let personaje of personajes" class="card-for" (click)="verDetalle(personaje.id)">
         <img [src]="personaje.data.imagen" style="height: 40hv; width: 60hv;"/>
         <ion-card-header>
-          <ion-card-title>Nombre: {{personaje.data.nombre}}</ion-card-title>
-          <ion-card-subtitle>Arma principal: {{personaje.data.armabase}}</ion-card-subtitle>
-          <ion-card-subtitle>Arma secundaria: {{personaje.data.armasecundaria}}</ion-card-subtitle>
+          <ion-card-title class="h-text-t">Nombre: {{personaje.data.nombre}}</ion-card-title>
+          <ion-card-subtitle class="h-text-s">Arma principal: {{personaje.data.armabase}}</ion-card-subtitle>
+          <ion-card-subtitle class="h-text-s">Arma secundaria: {{personaje.data.armasecundaria}}</ion-card-subtitle>
         </ion-card-header>
         <ion-card-content>
-          <h3>Descripcion: {{personaje.data.descripcion}}</h3>
+          <h2 class="h-text-c">Descripcion: {{personaje.data.descripcion}}</h2>
         </ion-card-content>
       </ion-card>
     </ion-content>

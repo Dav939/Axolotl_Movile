@@ -3,33 +3,34 @@
 <ion-content fullscreen="true" class="ion-padding">
   <ion-grid>
     <ion-row>
-      <ion-card class="card-t card-back">
-        <ion-img src="../../../assets/img/mercancia.jpeg"></ion-img>
+      <ion-card class="card-t card-t">
+        <ion-img src="../../../assets/img/test/items.webp"></ion-img>
         <ion-card-header>
-          <ion-card-subtitle class="ion-text-center text-colo title">Power Ups</ion-card-subtitle>
+          <ion-card-subtitle class="ion-text-center text-colo title">Items</ion-card-subtitle>
         </ion-card-header>
-          <ion-card-content class="ion-text-center text-colo">¿Que puedo encontrar?</ion-card-content>
+          <ion-card-content class="ion-text-center text-colo">¿Que powe ups puedo encontrar dentro del juego? </ion-card-content>
       </ion-card>
     </ion-row>
 
     <ion-row>
-      <ion-card class="ion-card-m card-back">
+      <ion-card *ngFor="let item of items" class="ion-card-m card-deg">
         <ion-card-content>
           <ion-grid class="ion-align-items-center">
             <ion-row>
               <!-- Imagen a la izquierda -->
               <ion-col size="4" class="ion-no-padding">
                 <ion-img 
-                  src="../../../assets/img/gerrero.jpeg" 
+                  [src]="item.data.imagen" 
                   alt="Imagen"
                   class="ion-c-m-img">
                 </ion-img>
               </ion-col>
               <!-- Texto a la derecha -->
               <ion-col size="8">
-                <ion-card-subtitle class="c-m-s text-colo"><strong>Pulque</strong></ion-card-subtitle>
+                <ion-card-subtitle class="c-m-s text-colo"><strong>{{item.data.nombre}}</strong></ion-card-subtitle>
                 <p class="ion-text-justify text-colo">
-                  El pulque es una bebida adorada en la cultura nahuatl debido a su preparacion.
+                  Efecto: {{item.data.efecto}} 
+                  {{item.data.descripcion}}
                 </p>
               </ion-col>
             </ion-row>
@@ -37,95 +38,8 @@
         </ion-card-content>
       </ion-card>
     </ion-row>
-    <ion-row>
-      <ion-card class="ion-card-m card-back">
-        <ion-card-content>
-          <ion-grid class="ion-align-items-center">
-            <ion-row>
-              <!-- Imagen a la izquierda -->
-              <ion-col size="4" class="ion-no-padding">
-                <ion-img 
-                  src="../../../assets/img/gerrero.jpeg" 
-                  alt="Imagen"
-                  class="ion-c-m-img">
-                </ion-img>
-              </ion-col>
-              <!-- Texto a la derecha -->
-              <ion-col size="8">
-                <ion-card-subtitle class="c-m-s text-colo"><strong>Pulque</strong></ion-card-subtitle>
-                <p class="ion-text-justify text-colo">
-                  El pulque es una bebida adorada en la cultura nahuatl debido a su preparacion.
-                </p>
-              </ion-col>
-            </ion-row>
-          </ion-grid>
-        </ion-card-content>
-      </ion-card>
-    </ion-row>
-    <ion-row>
-      <ion-card class="ion-card-m card-back">
-        <ion-card-content>
-          <ion-grid class="ion-align-items-center">
-            <ion-row>
-              <!-- Imagen a la izquierda -->
-              <ion-col size="4" class="ion-no-padding">
-                <ion-img 
-                  src="../../../assets/img/gerrero.jpeg" 
-                  alt="Imagen"
-                  class="ion-c-m-img">
-                </ion-img>
-              </ion-col>
-              <!-- Texto a la derecha -->
-              <ion-col size="8">
-                <ion-card-subtitle class="c-m-s text-colo"><strong>Pulque</strong></ion-card-subtitle>
-                <p class="ion-text-justify text-colo">
-                  El pulque es una bebida adorada en la cultura nahuatl debido a su preparacion.
-                </p>
-              </ion-col>
-            </ion-row>
-          </ion-grid>
-        </ion-card-content>
-      </ion-card>
-    </ion-row>
-    <ion-row>
-      <ion-card class="ion-card-m card-back">
-        <ion-card-content>
-          <ion-grid class="ion-align-items-center">
-            <ion-row>
-              <!-- Imagen a la izquierda -->
-              <ion-col size="4" class="ion-no-padding">
-                <ion-img 
-                  src="../../../assets/img/gerrero.jpeg" 
-                  alt="Imagen"
-                  class="ion-c-m-img">
-                </ion-img>
-              </ion-col>
-              <!-- Texto a la derecha -->
-              <ion-col size="8">
-                <ion-card-subtitle class="c-m-s text-colo"><strong>Pulque</strong></ion-card-subtitle>
-                <p class="ion-text-justify text-colo">
-                  El pulque es una bebida adorada en la cultura nahuatl debido a su preparacion.
-                </p>
-              </ion-col>
-            </ion-row>
-          </ion-grid>
-        </ion-card-content>
-      </ion-card>
-    </ion-row>
-
+    
   </ion-grid>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

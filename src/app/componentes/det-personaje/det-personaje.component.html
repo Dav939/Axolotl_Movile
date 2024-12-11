@@ -1,0 +1,373 @@
+<ion-content>
+  <ion-toolbar class="ion-no-border">
+    <ion-buttons slot="start">
+      <ion-button (click)="regresar()">
+        <ion-icon slot="start" name="arrow-undo-outline"></ion-icon>
+        <ion-label>Regresar</ion-label>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+
+  <ion-grid>
+      <ion-row class="row-g">
+        <ion-img class="img" [src]="personaje.imagen"></ion-img>
+      </ion-row>
+      <!-- Descripcion de guerrero -->
+      <ion-row>
+        <ion-card class="card-p">
+          <ion-card-header>
+            <!-- <ion-card-title class="ion-text-center c-p-t"><strong>Nombre: {{personaje.nombre}}</strong></ion-card-title>
+            <ion-card-title class="ion-text-center c-p-t">{{personaje.descripcion}}  Tipo: {{personaje.rol}}</ion-card-title>
+            <ion-card-title class="ion-text-center c-p-t">Salud: {{personaje.salud}}</ion-card-title>
+            <ion-card-title class="ion-text-center c-p-t">Velocidad: {{personaje.velocidad}}</ion-card-title>
+            <ion-card-title class="ion-text-center c-p-t">Daño: {{personaje.dano}}</ion-card-title>
+            <ion-card-title class="ion-text-center c-p-t">Rol: {{personaje.rol}}</ion-card-title>
+            <ion-card-title class="ion-text-center c-p-t">Aema Secundaria: {{personaje.armasecundaria}}</ion-card-title> -->
+          </ion-card-header>
+
+          <!-- Inicio Card -->
+          <ion-card-content>
+            <ion-card class="card-b no-padding">
+              <ion-card-content>
+                <ion-grid class="ion-align-items-center">
+                  <ion-row>
+                    <!-- Imagen a la izquierda -->
+                    <ion-col size="6" class="ion-no-padding">
+                      <ion-img 
+                        [src]="personaje.imagen" 
+                        alt="Imagen"
+                        class="ion-c-m-img">
+                      </ion-img>
+                    </ion-col>
+                    <!-- Texto a la derecha -->
+                    <ion-col size="6">
+                      <ion-card-subtitle class=" card-s-t"><strong>Nombre</strong></ion-card-subtitle>
+                      <p class=" card-s-p">
+                        {{personaje.nombre}}
+                      </p>
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
+              </ion-card-content>
+            </ion-card>
+          </ion-card-content>
+          <!-- Fin card -->
+          <!-- Inicio Card -->
+          <ion-card-content>
+            <ion-card class="card-b no-padding">
+              <ion-card-content>
+                <ion-grid class="ion-align-items-center">
+                  <ion-row>
+                    <!-- Imagen a la izquierda -->
+                    <ion-col size="6" class="ion-no-padding">
+                      <ion-img 
+                        src="../../../assets/img/test/items.webp" 
+                        alt="Imagen"
+                        class="ion-c-m-img">
+                      </ion-img>
+                    </ion-col>
+                    <!-- Texto a la derecha -->
+                    <ion-col size="6">
+                      <ion-card-subtitle class=" card-s-t"><strong>Info</strong></ion-card-subtitle>
+                      <p class=" card-s-p">
+                        {{personaje.descripcion}}
+                      </p>
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
+              </ion-card-content>
+            </ion-card>
+          </ion-card-content>
+          <!-- Fin card -->
+          <!-- Inicio Card -->
+          <ion-card-content>
+            <ion-card class="card-b no-padding">
+              <ion-card-content>
+                <ion-grid class="ion-align-items-center">
+                  <ion-row>
+                    <!-- Imagen a la izquierda -->
+                    <ion-col size="6" class="ion-no-padding">
+                      <ion-img 
+                        src="../../../assets/img/test/items.webp" 
+                        alt="Imagen"
+                        class="ion-c-m-img">
+                      </ion-img>
+                    </ion-col>
+                    <!-- Texto a la derecha -->
+                    <ion-col size="6">
+                      <ion-card-subtitle class=" card-s-t"><strong>Tipo</strong></ion-card-subtitle>
+                      <p class=" card-s-p">
+                        {{personaje.rol}}
+                      </p>
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
+              </ion-card-content>
+            </ion-card>
+          </ion-card-content>
+          <!-- Fin card -->
+          <!-- Inicio Card -->
+          <ion-card-content>
+            <ion-card class="card-b">
+              <ion-card-content>
+                <ion-grid class="ion-align-items-center">
+                  <ion-row>
+                    <!-- Imagen a la izquierda -->
+                    <ion-col size="6" class="ion-no-padding">
+                      <ion-img 
+                        src="../../../assets/img/test/items.webp" 
+                        alt="Imagen"
+                        class="ion-c-m-img">
+                      </ion-img>
+                    </ion-col>
+                    <!-- Texto a la derecha -->
+                    <ion-col size="6">
+                      <ion-card-subtitle class=" card-s-t"><strong>Salud</strong></ion-card-subtitle>
+                      <p class=" card-s-p">
+                        {{personaje.salud}}
+                      </p>
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
+              </ion-card-content>
+            </ion-card>
+          </ion-card-content>
+          <!-- Fin card -->
+          <!-- Inicio Card -->
+          <ion-card-content>
+            <ion-card class="card-b">
+              <ion-card-content>
+                <ion-grid class="ion-align-items-center">
+                  <ion-row>
+                    <!-- Imagen a la izquierda -->
+                    <ion-col size="6" class="ion-no-padding">
+                      <ion-img 
+                        src="../../../assets/img/test/items.webp" 
+                        alt="Imagen"
+                        class="ion-c-m-img">
+                      </ion-img>
+                    </ion-col>
+                    <!-- Texto a la derecha -->
+                    <ion-col size="6">
+                      <ion-card-subtitle class=" card-s-t"><strong>Velocidad</strong></ion-card-subtitle>
+                      <p class=" card-s-p">
+                        {{personaje.velocidad}}
+                      </p>
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
+              </ion-card-content>
+            </ion-card>
+          </ion-card-content>
+          <!-- Fin card -->
+          <!-- Inicio Card -->
+          <ion-card-content>
+            <ion-card class="card-b">
+              <ion-card-content>
+                <ion-grid class="ion-align-items-center">
+                  <ion-row>
+                    <!-- Imagen a la izquierda -->
+                    <ion-col size="6" class="ion-no-padding">
+                      <ion-img 
+                        src="../../../assets/img/test/items.webp" 
+                        alt="Imagen"
+                        class="ion-c-m-img">
+                      </ion-img>
+                    </ion-col>
+                    <!-- Texto a la derecha -->
+                    <ion-col size="6">
+                      <ion-card-subtitle class=" card-s-t"><strong>Daño</strong></ion-card-subtitle>
+                      <p class=" card-s-p">
+                        {{personaje.dano}}
+                      </p>
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
+              </ion-card-content>
+            </ion-card>
+          </ion-card-content>
+          <!-- Fin card -->
+          <!-- Inicio Card -->
+          <ion-card-content>
+            <ion-card class="card-b">
+              <ion-card-content>
+                <ion-grid class="ion-align-items-center">
+                  <ion-row>
+                    <!-- Imagen a la izquierda -->
+                    <ion-col size="6" class="ion-no-padding">
+                      <ion-img 
+                        src="../../../assets/img/test/items.webp" 
+                        alt="Imagen"
+                        class="ion-c-m-img">
+                      </ion-img>
+                    </ion-col>
+                    <!-- Texto a la derecha -->
+                    <ion-col size="6">
+                      <ion-card-subtitle class=" card-s-t"><strong>Arma Secundaria</strong></ion-card-subtitle>
+                      <p class=" card-s-p">
+                        {{personaje.armasecundaria}}
+                      </p>
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
+              </ion-card-content>
+            </ion-card>
+          </ion-card-content>
+          <!-- Fin card -->
+          <!-- Inicio Card -->
+          <ion-card-content>
+            <ion-card class="card-b">
+              <ion-card-content>
+                <ion-grid class="ion-align-items-center">
+                  <ion-row>
+                    <!-- Imagen a la izquierda -->
+                    <ion-col size="6" class="ion-no-padding">
+                      <ion-img 
+                        src="../../../assets/img/test/items.webp" 
+                        alt="Imagen"
+                        class="ion-c-m-img">
+                      </ion-img>
+                    </ion-col>
+                    <!-- Texto a la derecha -->
+                    <ion-col size="6">
+                      <ion-card-subtitle class=" card-s-t"><strong>Arma Principal</strong></ion-card-subtitle>
+                      <p class=" card-s-p">
+                        {{personaje.armabase}}
+                      </p>
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
+              </ion-card-content>
+            </ion-card>
+          </ion-card-content>
+          <!-- Fin card -->
+
+
+
+
+
+
+        </ion-card>
+      </ion-row>
+  </ion-grid>
+
+
+
+</ion-content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <ion-content>
+
+<ion-label class="titulo">
+  <h1 color="danger">{{personaje.nombre}}</h1>
+</ion-label>
+
+<img class="imagen" src="../../../assets/img/test/items.webp" ngI="../../../assets/img/test/items.webp">
+
+  <ion-row>
+    < size="8" class="detalle">
+      <ion-card class="poster">
+        <img src="../../../assets/img/test/items.webp" class="poster" ngI="../../../assets/img/test/items.webp">
+      </ion-card>
+    
+
+    <ion-col size="4" class="detalle">
+      <i>
+        <ion-label>Armas</ion-label>
+        <img class="icono" alt="Velocidad" src="../../../assets/img/test/items.webp" />
+        <ion-note slot="end" color="primary">x10</ion-note>
+      </
+    </ion-col>
+
+  </ion-row>
+</ion-grid>
+
+<ion-card>
+  <ion-card-header>
+    <ion-card-subtitle>Descripcion</ion-card-subtitle>
+  </ion-card-header>
+  <ion-card-content>
+    {{personaje.descripcion}}
+  </ion-card-content>
+</ion-card>
+
+
+<ion-card>
+  <ion-card-header>
+    <ion-card-subtitle>Estadisticas</ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-list>
+      <ion-item>
+        <img slot="start" class="icono" alt="salud" src="../../../assets/img/heart.png"/>
+        <ion-label>Salud</ion-label>
+        <ion-note slot="end" color="primary">6</ion-note>
+      </ion-item>
+    </ion-list>
+    <ion-list>
+      <ion-item>
+        <img slot="start" class="icono" src="../../../assets/img/heart.png" alt="salud">
+        <ion-label>Salud</ion-label>
+        <ion-note slot="end" color="primary">6</ion-note>
+      </ion-item>
+    </ion-list>
+    <ion-list>
+      <ion-item>
+        <img slot="start" class="icono" src="../../../assets/img/heart.png" alt="salud">
+        <ion-label>Salud</ion-label>
+        <ion-note slot="end" color="primary">6</ion-note>
+      </ion-item>
+    </ion-list>
+  </ion-card-content>
+  
+</ion-card>
+
+
+</ion-content>
+
+
+<ion-footer no-border>
+  <ion-toolbar>
+    
+    <ion-buttons slot="start">
+      <ion-button (click)="regresar()">
+        <ion-icon slot="start" name="arrow-back-circle-outline"></ion-icon>
+        <ion-label>Regresar</ion-label>
+      </ion-button>
+    </ion-buttons>
+  
+  </ion-toolbar>
+</ion-footer> -->
